@@ -1,0 +1,11 @@
+form{
+    margin: 60px;
+}
+.nome{
+    background-color: black;
+    color: white;
+}
+footer{
+    padding: 5px;
+    text-align: center;
+}
