@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<form>
+  <div class="nome">
+    <h1>Bruno Dill</h1>
+    <hr>
+  </div>
+  <div class="form-group row">
+    <label for="nomeid" class="col-4 col-form-label">Nome:</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-user"></i>
+          </div>
+        </div> 
+        <input id="nomeid" name="nomeid" type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="cpf" class="col-4 col-form-label">CPF:</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-address-book"></i>
+          </div>
+        </div> 
+        <input id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="rg" class="col-4 col-form-label">RG:</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-address-card"></i>
+          </div>
+        </div> 
+        <input id="rg" name="rg" placeholder="xx xxx xxx-xx" type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="endereco" class="col-4 col-form-label">Endereço:</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-location-arrow"></i>
+          </div>
+        </div> 
+        <input id="endereco" name="endereco" type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="bairro" class="col-4 col-form-label">Bairro:</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-certificate"></i>
+          </div>
+        </div> 
+        <input id="bairro" name="bairro" type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="cidade" class="col-4 col-form-label">Cidade:</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-map"></i>
+          </div>
+        </div> 
+        <input id="cidade" name="cidade" type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="estado" class="col-4 col-form-label">Estado:</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-paper-plane"></i>
+          </div>
+        </div> 
+        <input id="estado" name="estado" type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="cep" class="col-4 col-form-label">CEP:</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa "></i>
+          </div>
+        </div> 
+        <input id="cep" name="cep" placeholder="xxxxx-xx" type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="fone" class="col-4 col-form-label">Fone:</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-phone"></i>
+          </div>
+        </div> 
+        <input id="fone" name="fone" placeholder="(xx) xxxxx-xxxx" type="text" class="form-control">
+      </div>
+    </div>
+  </div> 
+  <div class="form-group row">
+    <div class="offset-4 col-8">
+      <button name="alterar" type="submit" class="btn btn-primary">Alterar</button>
+      <a href="#" class="btn btn-success">Adicionar</a>
+      <a href="#" class="btn btn-danger">Excluir</a>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; CORINTHIANS NA SÉRIE B</p>
+    <p class="sinal" > <i data-feather="instagram"></i>
+        <i data-feather="twitter"></i>
+        <i data-feather="mail"></i>
+        <i data-feather="send"></i>
+    </p>
+</footer>
+</form>
+<script>
+  feather.replace();
+</script>
+</body>
+</html>
