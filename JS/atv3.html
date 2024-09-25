@@ -1,0 +1,17 @@
+<script>
+
+    const qt_pao = Number(prompt("Quantos paozinhos foram vendidos?"))
+    const qt_broa = Number(prompt("Quantas broas foram vendidas?"))
+
+    total_pao = qt_pao*0.12
+    total_broa = qt_broa*1.50
+    total = total_broa+total_pao
+
+    poupança = total*0.10
+
+    document.write("Total de pães vendidos: ", qt_pao, "<br>")
+    document.write("Total de broas vendidas: ", qt_broa, "<br>")
+    document.write("Total monetário vendido: ", total, "<br>")
+    document.write("Total há ser guardado: ", poupança)
+
+</script>
