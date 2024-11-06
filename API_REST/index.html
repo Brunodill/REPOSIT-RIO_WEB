@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Endereço</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <form method="get" action=".">
+        <h2>Preencha seu Endereço</h2>
+        
+        <div class="input-group">
+            <label for="cep">CEP</label>
+            <input name="cep" type="text" id="cep" maxlength="9" onblur="pesquisacep(this.value);" placeholder="Digite o CEP" />
+        </div>
+
+        <div class="input-group">
+            <label for="rua">Rua</label>
+            <input name="rua" type="text" id="rua" disabled />
+        </div>
+
+        <div class="input-group">
+            <label for="bairro">Bairro</label>
+            <input name="bairro" type="text" id="bairro" disabled />
+        </div>
+
+        <div class="input-group">
+            <label for="cidade">Cidade</label>
+            <input name="cidade" type="text" id="cidade" disabled />
+        </div>
+
+        <div class="input-group">
+            <label for="estado">Estado</label>
+            <input name="estado" type="text" id="estado" disabled />
+        </div>
+    </form>
+
+    <script src="api.js"></script>
+</body>
+</html>
