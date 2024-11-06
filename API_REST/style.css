@@ -1,0 +1,114 @@
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para o body */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Container do formulário */
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            margin: 20px;
+            transition: all 0.3s ease;
+        }
+
+        form:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Título do formulário */
+        form h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para os labels */
+        label {
+            font-size: 16px;
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 8px;
+            display: block;
+            transition: color 0.3s ease;
+        }
+
+        label:hover {
+            color: #0056b3;
+        }
+
+        /* Estilo para os campos de input */
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            color: #333;
+            background-color: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        /* Efeito quando o campo é focado */
+        input[type="text"]:focus {
+            border-color: #0056b3;
+            outline: none;
+            background-color: #fff;
+            box-shadow: 0 0 8px rgba(0, 86, 179, 0.2);
+        }
+
+        /* Estilo para o botão de submit */
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            width: 100%;
+        }
+
+        /* Efeito hover para o botão */
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Efeito de foco no botão */
+        input[type="submit"]:focus {
+            outline: none;
+        }
+
+        /* Estilo de texto de aviso (opcional, se houver erro) */
+        .error {
+            color: #d9534f;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        /* Adiciona espaçamento entre as seções do formulário */
+        form .input-group {
+            margin-bottom: 18px;
+        }
